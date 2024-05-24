@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>varsha loosu</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            padding: 20px;
+            border: 1px solid #ddd;
+        }
+        h1 {
+            color: #333;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+        th {
+            background-color: #f4f4f4;
+        }
+        .success {
+            color: green;
+        }
+        .failure {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1>DevOps HTML Report</h1>
+    <p>This is a sample HTML report for testing DevOps pipelines.</p>
+
+    <h2>Summary</h2>
+    <p>Date: <span id="report-date"></span></p>
+
+    <h2>Test Results</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Test Case</th>
+                <th>Status</th>
+                <th>Duration</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Test Case 1</td>
+                <td class="success">Success</td>
+                <td>5s</td>
+            </tr>
+            <tr>
+                <td>Test Case 2</td>
+                <td class="failure">Failure</td>
+                <td>3s</td>
+            </tr>
+            <tr>
+                <td>Test Case 3</td>
+                <td class="success">Success</td>
+                <td>8s</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <script>
+        document.getElementById('report-date').textContent = new Date().toLocaleString();
+    </script>
+</body>
+</html>
